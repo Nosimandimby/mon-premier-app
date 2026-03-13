@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
-
 // Gestion Todo List avec localStorage, date, édition, catégories/priorités
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('todo-form');
