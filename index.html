@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h1>Liste de tâches</h1>
-        <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Ajouter une tâche..." required>
-            <button type="submit">Ajouter</button>
+<body class="bg-gray-100">
+    <div class="container mx-auto max-w-md bg-white rounded-lg shadow-lg p-6 mt-10">
+        <h1 class="text-2xl font-bold text-center mb-4">Liste de tâches</h1>
+        <form id="todo-form" class="flex gap-2 mb-4">
+            <input type="text" id="todo-input" class="flex-1 px-2 py-1 border rounded" placeholder="Ajouter une tâche..." required>
+            <!-- Le select sera ajouté dynamiquement par JS -->
+            <button type="submit" class="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-600">Ajouter</button>
         </form>
         <ul id="todo-list"></ul>
     </div>
